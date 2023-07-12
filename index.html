@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/src/styles.css">
+    <script src="/src/main.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <nav href="#">
+            <div class="nav_store">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="nav_logo-icon">
+                    <title>Academlo Logo</title>
+                    <g>
+                        <g>
+                            <path d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+                <h3>Store</h3>
+            </div>
+
+            <div class="rigth">
+                <a href="#products">product</a>
+                <a href="#home">home</a>
+            </div>
+            <i class='bx bx-cart bx-tada-hover'></i>
+        </nav>        
+    </header>
+    
+    <div class="container">
+
+        <div class="description" id="home">
+            <div class="description_text">
+                <h2 class="tittle_description">New Sweatshirt COLLECTIONS 2022</h2>
+                <p class="text_description">Latest arrival of the new Hanes Midweight Crewneck 
+                    sweatshirt imported from the 2022 series, 
+                    with a modern design.</p>
+            </div>
+            <div class="img_description">
+                <img src="https://academlostorev1.netlify.app/images/sweater2.png" 
+                alt="img_description" class="img_des">
+            </div>
+        </div>
+
+        <div class="buttons" id="products">
+            <button class="btn" id="all">all</button>
+            <button class="btn" id="shirt">shirt</button>
+            <button class="btn" id="hoddie">hoddie</button>
+            <button class="btn" id="sweater">sweater</button>
+        </div>
+
+        <div class="products"></div>
+
+        <div class="cart">
+            <div class="cart_product"></div>
+
+            <div class="cart_total">
+                <div class="cart_tt_info">
+                    <span class="info_amount"></span>
+                    <span class="info_price"></span>
+                </div>
+                <button class="btn_total">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="end_content">
+        <div class="creator">
+            <p>Leonardo Valenzuela</p>
+            <p>valenzuelaleonardo94@gmail.com</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
