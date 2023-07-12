@@ -307,8 +307,8 @@ i {
   }
   
 .spinner {
-    border: 0.7rem solid #f3f3f3;
-    border-top: 0.7rem solid #3498db;
+    border: 0.7rem solid white;
+    border-top: 0.7rem solid var(--text-100);
     border-radius: 50%;
     width: 7rem;
     height: 7rem;
@@ -323,6 +323,19 @@ i {
     100% {
       transform: rotate(360deg);
     }
+}
+
+@keyframes relativeMove {
+    0% {
+
+    }
+    50% {
+
+    }
+    100% {
+
+    }
+
 }
 /*---------------------------mediaQuery---------------------------*/
 
