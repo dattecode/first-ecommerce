@@ -110,7 +110,7 @@ img {
     gap: 1rem;
 }
 .product {
-    background-color: aliceblue;
+    background-color: var(--accent-100);
     border-radius: 0.7rem;
     box-shadow: var(--shadow);
 }
