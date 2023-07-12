@@ -202,7 +202,7 @@ function buyLogic () {
     })
 }
 
-function buttonFilter() {
+function buttonFilter () {
 
     const buttonHtml = document.querySelectorAll(".buttons .btn")
     const product = store.product
@@ -225,6 +225,16 @@ function buttonFilter() {
     }
 }
 
+function domLoader () {
+    document.addEventListener("DOMContentLoaded", function () {
+        const loader = document.getElementById("loader");
+
+        setTimeout(function () {
+            loader.style.display = "none";
+            document.body.style.visibility = "visible";
+          }, 3000);
+    })
+}
 // -------------------------------------------- main
 
 async function main () {
@@ -242,6 +252,7 @@ async function main () {
     totalCart()
     buyLogic()
     buttonFilter()
+    domLoader()
 }
 
 main()
