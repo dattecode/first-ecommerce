@@ -355,6 +355,10 @@ i {
     border-radius: 1rem;
 }
 
+.modal > h4 {
+    width: 80%;
+}
+
 .close_modal {
     position: absolute;
     cursor: pointer;
