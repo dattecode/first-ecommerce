@@ -235,6 +235,17 @@ function domLoader () {
           }, 3000);
     })
 }
+
+function scrollNav () {
+
+    const navbar = document.querySelector(".navbar")
+
+    window.addEventListener('scroll', function () {
+        navbar.classList.toggle("header_scroll", this.window.scrollY > 0)
+    })
+
+}
+
 // -------------------------------------------- main
 
 async function main () {
@@ -253,6 +264,7 @@ async function main () {
     buyLogic()
     buttonFilter()
     domLoader()
+    scrollNav()
 }
 
 main()
