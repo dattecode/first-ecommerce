@@ -22,7 +22,7 @@ function printProduct (arr = store.product) {
         html += `
             <div class="product">
                 <div class="img_product">
-                    <img src="${image}">
+                    <img src="${image}" id="${id}">
                 </div>
                 <div class="produc_info">
                     <h4>${name}</h4>
@@ -246,6 +246,40 @@ function scrollNav () {
 
 }
 
+function modalImg () {
+    const productHtml = document.querySelector(".products")
+    productHtml.addEventListener("click", function (e) {
+
+        const targetId = Number(e.target.id)
+        const productArr = store.product
+
+        const totalProduct = productArr.find(function(product) {
+            return product.id === targetId
+        })
+
+        const {name, image, description} = totalProduct
+
+        let html = `
+            <div class="modal">
+                <p class="close_modal">x<p>
+                <h4>${name}</h4>
+                <img src="${image}" class="img_class">
+                <p>${description}<p>
+            </div>
+        `
+        const modal = document.querySelector(".containtModal")
+        modal.classList.toggle("contentModal__show")
+        
+        document.querySelector(".containtModal").innerHTML = html
+
+        const modalClose = document.querySelector(".close_modal")
+        modalClose.addEventListener("click", function(){
+            const modal = document.querySelector(".containtModal")
+            modal.classList.toggle("contentModal__show")
+        })
+    })
+}
+
 // -------------------------------------------- main
 
 async function main () {
@@ -265,6 +299,7 @@ async function main () {
     buttonFilter()
     domLoader()
     scrollNav()
+    modalImg()
 }
 
 main()
