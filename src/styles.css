@@ -405,4 +405,8 @@ i {
     .buttons {
         border-radius: 0.5rem;
     }
+
+    .modal {
+        width: 30%;
+    }
 }
